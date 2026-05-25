@@ -1,0 +1,159 @@
+aid: ragas-ai
+name: Ragas
+description: >-
+  Ragas is an open-source evaluation toolkit for Large Language Model
+  applications, with particular depth on Retrieval Augmented Generation (RAG)
+  and agentic systems. Originally created under the Exploding Gradients
+  organization on GitHub and now maintained by Vibrant Labs AI, Ragas is a
+  Python library distributed on PyPI under the Apache 2.0 license. It moves
+  teams from informal "vibe checks" to systematic evaluation loops by
+  providing objective LLM-based and traditional metrics, automated test
+  dataset generation, experiment tracking, and integrations with the broader
+  LLM ecosystem including LangChain, LlamaIndex, OpenAI, Anthropic, and
+  popular observability platforms. Ragas exposes a metrics library covering
+  faithfulness, response relevancy, context precision and recall, factual
+  correctness, semantic similarity, agent tool-use accuracy, SQL equivalence,
+  Nvidia-defined RAG metrics, and general-purpose rubric scoring. The
+  project ships a CLI (`ragas`) with quickstart templates such as
+  `rag_eval`, and is consumed primarily as a `pip install ragas` library
+  rather than as a hosted API service. Ragas is widely cited as a default
+  evaluation harness for RAG applications and has grown a substantial
+  community on GitHub and Discord.
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - LLM Evaluation
+  - RAG Evaluation
+  - Retrieval Augmented Generation
+  - AI Evaluation
+  - Open Source
+  - Python
+  - Metrics
+  - Test Data Generation
+  - Agent Evaluation
+  - LLM Tooling
+url: https://raw.githubusercontent.com/api-evangelist/ragas-ai/refs/heads/main/apis.yml
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.20'
+apis:
+  - aid: ragas-ai:ragas
+    name: Ragas Python Library
+    description: >-
+      The Ragas Python library is the primary surface of the project,
+      installed via `pip install ragas` and imported as `ragas`. It exposes
+      evaluation entry points (`ragas.evaluate`), metric classes (Faithfulness,
+      AnswerRelevancy, ContextPrecision, ContextRecall, FactualCorrectness,
+      SemanticSimilarity, ToolCallAccuracy, AgentGoalAccuracy, and more),
+      dataset generation utilities, and integrations with LangChain and
+      LlamaIndex. The library is not an HTTP API — it is consumed in-process
+      by Python evaluation scripts, notebooks, and CI pipelines.
+    humanURL: https://docs.ragas.io/
+    tags:
+      - Python
+      - Library
+      - Evaluation
+      - RAG
+    properties:
+      - url: https://docs.ragas.io/
+        type: Documentation
+      - url: https://github.com/explodinggradients/ragas
+        type: SourceCode
+      - url: https://pypi.org/project/ragas/
+        type: SDK
+      - url: https://github.com/explodinggradients/ragas/blob/main/LICENSE
+        type: License
+common:
+  - type: Website
+    url: https://www.ragas.io/
+  - type: Documentation
+    url: https://docs.ragas.io/
+  - type: GettingStarted
+    url: https://docs.ragas.io/en/stable/getstarted/
+  - type: Concepts
+    url: https://docs.ragas.io/en/stable/concepts/
+  - type: Metrics
+    url: https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/
+  - type: HowToGuides
+    url: https://docs.ragas.io/en/stable/howtos/
+  - type: SourceCode
+    url: https://github.com/explodinggradients/ragas
+  - type: GitHubOrganization
+    url: https://github.com/explodinggradients
+  - type: Package
+    url: https://pypi.org/project/ragas/
+  - type: License
+    url: https://github.com/explodinggradients/ragas/blob/main/LICENSE
+  - type: Issues
+    url: https://github.com/explodinggradients/ragas/issues
+  - type: Releases
+    url: https://github.com/explodinggradients/ragas/releases
+  - type: Discord
+    url: https://discord.gg/5djav8GGNZ
+  - type: Twitter
+    url: https://twitter.com/ragas_io
+  - type: Company
+    url: https://www.vibrantlabs.ai/
+  - type: Contact
+    url: mailto:founders@vibrantlabs.com
+  - type: Features
+    data:
+      - name: RAG Evaluation Metrics
+        description: Faithfulness, Response Relevancy, Context Precision, Context Recall, Context Entities Recall, and Noise Sensitivity for retrieval augmented generation pipelines.
+      - name: Agent and Tool-Use Metrics
+        description: Topic Adherence, Tool Call Accuracy, Tool Call F1, and Agent Goal Accuracy for evaluating multi-step agentic systems.
+      - name: Natural Language Comparison
+        description: Factual Correctness, Semantic Similarity, BLEU, ROUGE, CHRF, Exact Match, and String Presence metrics for output comparison.
+      - name: SQL Evaluation
+        description: Execution-based Datacompy Score and SQL Query Equivalence metrics for text-to-SQL applications.
+      - name: General Purpose Scoring
+        description: Aspect Critic, Simple Criteria Scoring, Rubrics-based scoring, and instance-specific rubrics for custom evaluation criteria.
+      - name: Nvidia Metrics
+        description: Answer Accuracy, Context Relevance, and Response Groundedness metrics contributed by Nvidia for RAG quality.
+      - name: Test Data Generation
+        description: Automated synthesis of diverse test datasets covering single-hop, multi-hop, and abstract query types over user knowledge bases.
+      - name: Experiments
+        description: Experiment-first workflow comparing prompts, models, and configurations across datasets with iterative result tracking.
+      - name: Custom Metrics
+        description: DiscreteMetric and decorator-based APIs for defining LLM-judge and rule-based custom evaluation metrics.
+      - name: CLI Quickstart Templates
+        description: The `ragas quickstart` command scaffolds evaluation projects including the `rag_eval` template for RAG systems.
+  - type: UseCases
+    data:
+      - name: RAG Pipeline Evaluation
+        description: Scoring retrieval and generation quality in RAG applications across faithfulness, relevance, and context fidelity.
+      - name: Agent Evaluation
+        description: Measuring tool-call correctness, goal completion, and topic adherence in multi-step LLM agents.
+      - name: Regression Testing in CI
+        description: Running Ragas metrics in CI pipelines to detect quality regressions across prompt, model, and configuration changes.
+      - name: Model and Prompt Selection
+        description: Comparing candidate models and prompt variants on a fixed dataset using Ragas experiments.
+      - name: Synthetic Test Set Generation
+        description: Generating diverse evaluation datasets from a knowledge base for systematic LLM testing.
+      - name: Text-to-SQL Evaluation
+        description: Validating generated SQL against reference queries using execution and structural equivalence metrics.
+  - type: Integrations
+    data:
+      - name: LangChain
+        description: Native integration for evaluating LangChain chains, retrievers, and agents using Ragas metrics.
+      - name: LlamaIndex
+        description: Integration for evaluating LlamaIndex RAG pipelines and query engines.
+      - name: OpenAI
+        description: Default LLM judge backend uses OpenAI models such as GPT-4 class judges.
+      - name: Anthropic
+        description: Anthropic Claude models supported as LLM judges via the LangChain LLM abstraction.
+      - name: Hugging Face
+        description: Support for Hugging Face embeddings and models as judges, plus dataset interop via the `datasets` library.
+      - name: LangSmith
+        description: Result tracking and trace inspection via LangSmith observability.
+      - name: Arize Phoenix
+        description: Observability integration for tracing Ragas evaluations alongside production LLM traffic.
+      - name: Helicone
+        description: LLM cost and trace observability for Ragas-driven evaluations.
+      - name: Pandas
+        description: Datasets and evaluation results are exposed as pandas DataFrames for analysis.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
