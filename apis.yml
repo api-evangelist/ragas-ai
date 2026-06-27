@@ -62,7 +62,7 @@ apis:
       - url: https://github.com/explodinggradients/ragas
         type: SourceCode
       - url: https://pypi.org/project/ragas/
-        type: SDK
+        type: SDKs
       - url: https://github.com/explodinggradients/ragas/blob/main/LICENSE
         type: License
 common:
@@ -88,7 +88,7 @@ common:
     url: https://github.com/explodinggradients/ragas/blob/main/LICENSE
   - type: Issues
     url: https://github.com/explodinggradients/ragas/issues
-  - type: Releases
+  - type: ReleaseNotes
     url: https://github.com/explodinggradients/ragas/releases
   - type: Discord
     url: https://discord.gg/5djav8GGNZ
