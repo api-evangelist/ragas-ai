@@ -66,6 +66,8 @@ apis:
       - url: https://github.com/explodinggradients/ragas/blob/main/LICENSE
         type: License
 common:
+  - type: DomainSecurity
+    url: security/ragas-ai-domain-security.yml
   - type: Website
     url: https://www.ragas.io/
   - type: Documentation
