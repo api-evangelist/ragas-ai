@@ -20,6 +20,17 @@ description: >-
   evaluation harness for RAG applications and has grown a substantial
   community on GitHub and Discord.
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -88,6 +99,12 @@ apis:
       - url: https://github.com/explodinggradients/ragas/blob/main/LICENSE
         type: License
 common:
+  - type: SecurityPolicy
+    url: https://github.com/vibrantlabsai/ragas/blob/main/SECURITY.md
+  - type: CodeOfConduct
+    url: https://github.com/vibrantlabsai/ragas/blob/main/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/vibrantlabsai/ragas/blob/main/CONTRIBUTING.md
   - type: DomainSecurity
     url: security/ragas-ai-domain-security.yml
   - type: Website
