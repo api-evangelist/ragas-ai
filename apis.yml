@@ -48,7 +48,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ragas-ai.p
 tags:
   - LLM Evaluation
   - RAG Evaluation
-  - Retrieval Augmented Generation
+  - RAG
   - AI Evaluation
   - Open-Source
   - Python
