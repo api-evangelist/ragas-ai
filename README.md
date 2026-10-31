@@ -1,4 +1,4 @@
-# ragas-ai
+# Ragas
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Ragas — open-source RAG and LLM application evaluation framework (Exploding Gradients / Vibrant Labs)
+Ragas is an open-source evaluation toolkit for Large Language Model applications, with particular depth on Retrieval Augmented Generation (RAG) and agentic systems. Originally created under the Exploding Gradients organization on GitHub and now maintained by Vibrant Labs AI, Ragas is a Python library distributed on PyPI under the Apache 2.0 license. It moves teams from informal "vibe checks" to systematic evaluation loops by providing objective LLM-based and traditional metrics, automated test dataset generation, experiment tracking, and integrations with the broader LLM ecosystem including LangChain, LlamaIndex, OpenAI, Anthropic, and popular observability platforms. Ragas exposes a metrics library covering faithfulness, response relevancy, context precision and recall, factual correctness, semantic similarity, agent tool-use accuracy, SQL equivalence, Nvidia-defined RAG metrics, and general-purpose rubric scoring. The project ships a CLI (`ragas`) with quickstart templates such as `rag_eval`, and is consumed primarily as a `pip install ragas` library rather than as a hosted API service. Ragas is widely cited as a default evaluation harness for RAG applications and has grown a substantial community on GitHub and Discord.
+
+**Areas:** LLM Evaluation · RAG Evaluation · RAG · AI Evaluation · Open Source · Python · Metrics · Test Data Generation · Agent Evaluation · LLM Tooling
+
+## Ragas on APIs.io
+
+Everything profiled for Ragas is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ragas-ai/](https://apis.io/providers/ragas-ai/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Ragas Python Library](https://apis.io/apis/ragas-ai/ragas/) — The Ragas Python library is the primary surface of the project, installed via `pip install ragas` and imported as `ragas`. It exposes evaluation entry…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Ragas Ai Domain Security](https://apis.io/security/ragas-ai/ragas-ai-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.ragas.io/)
+- [Documentation](https://docs.ragas.io/)
+- [Getting started](https://docs.ragas.io/en/stable/getstarted/)
+- [GitHub](https://github.com/explodinggradients)
+
+## API Evangelist rating
+
+**Kin Score 23.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ragas-ai/](https://apis.io/providers/ragas-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Ragas: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ragas-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
